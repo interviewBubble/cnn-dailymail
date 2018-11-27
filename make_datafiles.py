@@ -98,7 +98,7 @@ def read_text_file(text_file):
 def hashhex(s):
   """Returns a heximal formated SHA1 hash of the input string."""
   h = hashlib.sha1()
-  h.update(s)
+  h.update(s.encode())
   return h.hexdigest()
 
 
